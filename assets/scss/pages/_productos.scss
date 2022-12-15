@@ -1,0 +1,29 @@
+.mainProductos {
+    @media only screen and (min-width: 768px) {
+        section {
+            display: flex;
+            flex-flow: row  nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    .tarjeta {
+        padding-bottom: 40px;
+    }
+
+    .comprar {
+        background: radial-gradient(circle, rgba(56,102,65,1) 63%, rgba(136,186,105,1) 100%);
+        box-shadow: 0 0 15px black;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 2rem;
+        margin: 20px 50px 0 50px;
+        transition: 3s;
+
+        &:hover {
+            box-shadow: 0 0 15px #F2E8CF;
+            transform: 
+                scale(1.2);
+        }
+    }
+}

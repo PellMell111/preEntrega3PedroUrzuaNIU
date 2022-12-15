@@ -1,0 +1,72 @@
+.mainIndex {  
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../media/subtitulo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+            height: 300px;
+            font-size: 3.5vw;
+        }
+    
+        h2 {
+            font-weight: normal;
+            background-image: radial-gradient(circle, rgba(56,102,65,1) 0%, rgba(149,185,83,1) 56%, rgba(56,102,65,1) 100%);
+            border-radius: 20px;
+            box-shadow: 0 0 5px black;
+            text-shadow: 0 0 5px black;
+            padding: 20px;
+
+            &:hover {
+                background-image: radial-gradient(circle, rgba(149,185,83,1) 0%, rgba(56,102,65,1) 56%, rgba(149,185,83,1) 100%);
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            height: 90vh;
+            font-size: 2.5vw;
+        }
+    }
+
+    .nosotros {
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            flex-flow: row nowrap;
+
+            span {
+                margin-right: 10px;
+                width: 70vw;
+            }
+
+            .flex {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    section {
+        padding-bottom: 25px;
+
+        article:hover {
+            background: radial-gradient(circle, rgba(56,102,65,1) 63%, rgba(136,186,105,1) 100%);
+            box-shadow: 0 0 5px #1a2c1d;
+        }
+
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            .link {
+                width: 390px;
+            }
+        }
+    }
+}

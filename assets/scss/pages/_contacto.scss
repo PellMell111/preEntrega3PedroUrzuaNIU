@@ -1,0 +1,18 @@
+form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    .input {
+        margin-bottom: 10px;
+    }
+
+    .boton {
+        background: radial-gradient(circle, rgba(56,102,65,1) 63%, rgba(136,186,105,1) 100%);
+        box-shadow: 0 0 15px black;
+        padding: 10px;
+        margin: 10px;
+    }
+}

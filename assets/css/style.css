@@ -1,0 +1,313 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: #F2E8CF;
+}
+
+body {
+  background-color: #6A994E;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  color: #F2E8CF;
+}
+header h1 {
+  padding: 8px 0 0 10px;
+  font-size: 4rem;
+  transition: 1s;
+}
+header h1:hover {
+  text-shadow: -1px 0 #1a2c1d, 0 1px #1a2c1d, 1px 0 #1a2c1d, 0 -1px #1a2c1d, 0 0 5px #F2E8CF;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  header h1 {
+    background-image: linear-gradient(170deg, #386641 40%, #1a2c1d);
+  }
+  header ul {
+    padding: 5px 0 5px 0;
+    background-image: linear-gradient(#111812 0% 0.01%, #2d3d30 5% 95%, #111812 99.9%);
+  }
+  header li {
+    padding: 5px 0 0 10px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+  header li:hover {
+    background-color: #578560;
+    transform: scale(1.01);
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-image: linear-gradient(170deg, #386641 40%, #1a2c1d);
+  }
+  header ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 10px;
+  }
+  header li {
+    padding: 0 10px;
+    font-size: 1.5rem;
+    transition: 1s;
+  }
+  header li:hover {
+    transform: scale(1.2);
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #111812;
+  color: #F2E8CF;
+  padding: 15px 50px;
+}
+footer p {
+  grid-column: 1;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+footer ul {
+  grid-column: 1;
+  grid-row: 3/7;
+  list-style: none;
+}
+
+.box {
+  background: radial-gradient(circle, rgb(56, 102, 65) 63%, rgb(23, 32, 25) 100%);
+  color: #F2E8CF;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+  text-align: justify;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .box {
+    margin: 20px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .box {
+    margin: 30px 50px 10px 50px;
+    padding: 15px;
+  }
+}
+.box .superior {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+.box .titulo {
+  font-size: 1.5rem;
+  padding-bottom: 5px;
+}
+.box .parrafo {
+  font-size: 1.1rem;
+  padding: 0 5px 5px 0;
+}
+
+.mainIndex div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../media/subtitulo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mainIndex div {
+    height: 300px;
+    font-size: 3.5vw;
+  }
+}
+.mainIndex div h2 {
+  font-weight: normal;
+  background-image: radial-gradient(circle, rgb(56, 102, 65) 0%, rgb(149, 185, 83) 56%, rgb(56, 102, 65) 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px black;
+  padding: 20px;
+}
+.mainIndex div h2:hover {
+  background-image: radial-gradient(circle, rgb(149, 185, 83) 0%, rgb(56, 102, 65) 56%, rgb(149, 185, 83) 100%);
+}
+@media only screen and (min-width: 768px) {
+  .mainIndex div {
+    height: 90vh;
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mainIndex .nosotros {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .mainIndex .nosotros span {
+    margin-right: 10px;
+    width: 70vw;
+  }
+  .mainIndex .nosotros .flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+}
+.mainIndex section {
+  padding-bottom: 25px;
+}
+.mainIndex section article:hover {
+  background: radial-gradient(circle, rgb(56, 102, 65) 63%, rgb(136, 186, 105) 100%);
+  box-shadow: 0 0 5px #1a2c1d;
+}
+@media only screen and (min-width: 768px) {
+  .mainIndex section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .mainIndex section .link {
+    width: 390px;
+  }
+}
+
+.cabaña section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .cabaña {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .cabaña img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cabaña {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .cabaña img {
+    width: 300%;
+  }
+}
+.cabaña span {
+  align-self: center;
+  background: radial-gradient(circle, rgb(56, 102, 65) 63%, rgb(136, 186, 105) 100%);
+  box-shadow: 0 0 15px black;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 2rem;
+  transition: 3s;
+}
+.cabaña span:hover {
+  box-shadow: 0 0 15px #F2E8CF;
+  transform: scale(1.2);
+}
+
+.blog section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .blog {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .blog img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .blog {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .blog img {
+    width: 400%;
+  }
+  .blog p {
+    margin-right: 20px;
+  }
+}
+.blog span {
+  align-self: center;
+  background: radial-gradient(circle, rgb(56, 102, 65) 63%, rgb(136, 186, 105) 100%);
+  box-shadow: 0 0 15px black;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 2rem;
+  transition: 3s;
+}
+.blog span:hover {
+  box-shadow: 0 0 15px #F2E8CF;
+  transform: scale(1.2);
+}
+
+@media only screen and (min-width: 768px) {
+  .mainProductos section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+.mainProductos .tarjeta {
+  padding-bottom: 40px;
+}
+.mainProductos .comprar {
+  background: radial-gradient(circle, rgb(56, 102, 65) 63%, rgb(136, 186, 105) 100%);
+  box-shadow: 0 0 15px black;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 50px 0 50px;
+  transition: 3s;
+}
+.mainProductos .comprar:hover {
+  box-shadow: 0 0 15px #F2E8CF;
+  transform: scale(1.2);
+}
+
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+form .input {
+  margin-bottom: 10px;
+}
+form .boton {
+  background: radial-gradient(circle, rgb(56, 102, 65) 63%, rgb(136, 186, 105) 100%);
+  box-shadow: 0 0 15px black;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
